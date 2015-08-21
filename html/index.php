@@ -47,10 +47,11 @@
       title: 'Current Performance Results: 500 Workers',
       curveType: 'function',
       legend: { position: 'bottom' },
-      vAxis: { title: "TPS" },
+      vAxis: { title: "Concurrency" },
       hAxis: {
-         title: "Concurrency",
+         title: "TPS",
       }
+      pointSize: 5,
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('500_worker'));
@@ -77,6 +78,7 @@
       hAxis: {
          title: "Concurrency",
       }
+      pointSize: 5,
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('1000_worker'));
